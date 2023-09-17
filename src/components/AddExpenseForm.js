@@ -27,7 +27,6 @@ const AddExpenseForm = () => {
 		setName('');
 		setCost('');
 	}
-	
 	return (
 		<form onSubmit={onSubmit}>
 			<div className='row'>
