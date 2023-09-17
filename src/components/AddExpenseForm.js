@@ -23,6 +23,11 @@ const AddExpenseForm = () => {
 		});
 	};
 
+	const reset = () => {
+		setName('');
+		setCost('');
+	}
+	
 	return (
 		<form onSubmit={onSubmit}>
 			<div className='row'>
@@ -52,6 +57,7 @@ const AddExpenseForm = () => {
 					<button type='submit' className='btn btn-primary mt-3'>
 						Save
 					</button>
+					<button type='reset' className='btn btn-warning mt-3' onClick={reset}>Reset</button>
 				</div>
 			</div>
 		</form>
