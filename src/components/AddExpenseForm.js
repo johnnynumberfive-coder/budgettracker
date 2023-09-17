@@ -21,6 +21,7 @@ const AddExpenseForm = () => {
 			type: 'ADD_EXPENSE',
 			payload: expense,
 		});
+		reset();
 	};
 
 	const reset = () => {
@@ -56,7 +57,7 @@ const AddExpenseForm = () => {
 					<button type='submit' className='btn btn-primary mt-3'>
 						Save
 					</button>
-					<button type='reset' className='btn btn-warning mt-3' onClick={reset}>Reset</button>
+					
 				</div>
 			</div>
 		</form>
